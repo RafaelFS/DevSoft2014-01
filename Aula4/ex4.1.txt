@@ -1,0 +1,21 @@
+Rafael Freitas da Silva
+
+Classe: Item
+Atributos: tracking_number, price
+Métodos: get_tracking_number, get_price, set_price
+
+Classe: Vehicle
+Atributos: license_plate, driver_name, load 
+Métodos: add_load, change_driver, get_driver, remove_load
+
+Classe: Client
+Atributos: name, purchases
+Métodos: get_name, get_purchases
+
+Classe: Purchase
+Atributos: itens
+Métodos: get_total_price
+
+Classe: Load
+Atributos: itens 
+Métodos: add_item, remove_item
