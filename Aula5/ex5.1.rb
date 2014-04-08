@@ -28,6 +28,4 @@
 
 arr = ["Apple", 1, -> { puts "Hey!"}, Hash.new, 1.000001, 1e10, 100_000 ]
 
-for i in (0..arr.length-1) do
-  puts "Class: #{arr[i].class}"
-end
+arr.each{|x| puts "Class: #{x.class}"}
