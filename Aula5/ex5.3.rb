@@ -46,21 +46,22 @@ people = [
 ]
 
 # 1) Quantas pessoas são homens?
-
-# Seu código aqui...
+men = people.find_all{|x| x[:gender] == :male}
+puts "Ha #{men.length} homens"
 
 # 2) Quantas são mulheres?
-
-# Seu código aqui...
+women = people.find_all{|x| x[:gender] == :female}
+puts "Ha #{women.length} mulheres"
 
 # 3) Quantas pessoas são maiores de idade?
-
-# Seu código aqui...
+ofage = people.find_all{|x| x[:age] >= 18}
+puts "Ha #{ofage.length} pessoas maiores de idade"
 
 # 4) Qual a soma das idades de todos os brasileiros?
 
-# Seu código aqui...
+
 
 # 5) Imprima todos os nomes em ordem alfabética
-
-# Seu código aqui...
+names = []
+names << people.each{|x| x[:name]}
+people.each{|x| puts x}
