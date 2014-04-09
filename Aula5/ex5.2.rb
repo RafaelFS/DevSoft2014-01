@@ -18,8 +18,9 @@ arr = (0..10).to_a
 # A função de transformação será "soma 1". Portanto, ao final, queremos obter
 # o equivalente a (1..11), isto é, todos os elementos da coleção original
 # incrementados de 1.
-arr.map { |element| element + 1 }
+arr2 = arr.map { |element| element + 1 }
 
+arr2.each{|x| puts x}
 # -----------------
 # Exercício 5.2
 # -----------------
@@ -29,3 +30,13 @@ arr.map { |element| element + 1 }
 # A chamada do seu método será algo como:
 
 # map(arr) { |x| x + 1 }
+def map(collection)
+  r = []
+  collection.each do |x|
+     r << yield(x)
+  end
+  return r
+end
+
+arr3 = map(arr) { |x| x + 1 }
+arr3.each{|x| puts x}
