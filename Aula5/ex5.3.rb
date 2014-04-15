@@ -58,10 +58,13 @@ ofage = people.find_all{|x| x[:age] >= 18}
 puts "Ha #{ofage.length} pessoas maiores de idade"
 
 # 4) Qual a soma das idades de todos os brasileiros?
-
-
+brages = people.find_all{|x| x[:country] == 'Brazil'}
+agesum = 0
+brages.each{|x| agesum = agesum + x[:age]}
+puts "A soma das idades de todos os brasileiros eh #{agesum}"
 
 # 5) Imprima todos os nomes em ordem alfabética
 names = []
-names << people.each{|x| x[:name]}
-people.each{|x| puts x}
+people.each{|x| names << x[:name]}
+names = names.sort
+names.each{|x| puts x}
