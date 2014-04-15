@@ -29,7 +29,7 @@
     <meta name="msapplication-TileImage" content="/windows-tile.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="selected-link" value="repo_source" data-pjax-transient />
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="8F6B6633:013D:17E5896:534DAC21" name="octolytics-dimension-request_id" /><meta content="643475" name="octolytics-actor-id" /><meta content="RafaelFS" name="octolytics-actor-login" /><meta content="0b382ae5d5afda01dd9faa7036b4e8d3990141941926883cb43773e76ce8f718" name="octolytics-actor-hash" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="8F6B6633:2AFE:E45E4:534DBE91" name="octolytics-dimension-request_id" /><meta content="643475" name="octolytics-actor-id" /><meta content="RafaelFS" name="octolytics-actor-login" /><meta content="0b382ae5d5afda01dd9faa7036b4e8d3990141941926883cb43773e76ce8f718" name="octolytics-actor-hash" />
     
 
     
@@ -50,7 +50,7 @@
         
       <meta http-equiv="x-pjax-version" content="100f818207d1a40887ccd26a868fad14">
 
-        <link data-pjax-transient rel='permalink' href='/infosimples/DevSoft-2014-01/blob/ffe9169fc911b5072ef69b90a465b180cc4478bd/Week%206/Exercises/ex6.2.rb'>
+        <link data-pjax-transient rel='permalink' href='/infosimples/DevSoft-2014-01/blob/0878226347dcda193886674222c0ef7c52d42146/Week%206/Exercises/ex6.2.rb'>
 
   <meta name="description" content="DevSoft-2014-01 - Repository for things related to the DevSoft course." />
 
@@ -91,7 +91,7 @@
     data-username="RafaelFS"
       data-repo="infosimples/DevSoft-2014-01"
       data-branch="master"
-      data-sha="e1f709d695e1cc256255fa3f4d999c060a47261f"
+      data-sha="b4dc7d21c8fe178b8e91c455f5df1aaf0a646374"
   >
   <div class="display hidden"></div>
 </div>
@@ -474,7 +474,7 @@
           
 
 
-<!-- blob contrib key: blob_contributors:v21:c246edf9ae3321f2f27e69f362f5bd52 -->
+<!-- blob contrib key: blob_contributors:v21:8b59b989da54f7504fdab818599d64f2 -->
 
 <p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
 
@@ -564,26 +564,12 @@
 </div>
 
 
-  <div class="commit file-history-tease">
-    <img alt="Rafael Ivan Garcia" class="main-avatar js-avatar" data-user="405002" height="24" src="https://avatars0.githubusercontent.com/u/405002?s=140" width="24" />
-    <span class="author"><a href="/rafaelivan" rel="author">rafaelivan</a></span>
-    <time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-04-15T17:50:19-03:00" title="2014-04-15 17:50:19">April 15, 2014</time>
-    <div class="commit-title">
-        <a href="/infosimples/DevSoft-2014-01/commit/0bcc802a5f270ca612ab3588ed8f057fda2d9690" class="message" data-pjax="true" title="Adds ex6.2">Adds ex6.2</a>
-    </div>
+  <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/infosimples/DevSoft-2014-01/contributors/master/Week%206/Exercises/ex6.2.rb">
+    Fetching contributors…
 
     <div class="participation">
-      <p class="quickstat"><a href="#blob_contributors_box" rel="facebox"><strong>1</strong>  contributor</a></p>
-      
-    </div>
-    <div id="blob_contributors_box" style="display:none">
-      <h2 class="facebox-header">Users who have contributed to this file</h2>
-      <ul class="facebox-user-list">
-          <li class="facebox-user-list-item">
-            <img alt="Rafael Ivan Garcia" class=" js-avatar" data-user="405002" height="24" src="https://avatars0.githubusercontent.com/u/405002?s=140" width="24" />
-            <a href="/rafaelivan">rafaelivan</a>
-          </li>
-      </ul>
+      <p class="loader-loading"><img alt="Octocat-spinner-32-eaf2f5" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
+      <p class="loader-error">Cannot retrieve contributors at this time</p>
     </div>
   </div>
 
@@ -594,9 +580,9 @@
         <span class="icon"><b class="octicon octicon-file-text"></b></span>
         <span class="mode" title="File Mode">file</span>
         <span class="meta-divider"></span>
-          <span>3 lines (2 sloc)</span>
+          <span>14 lines (10 sloc)</span>
           <span class="meta-divider"></span>
-        <span>0.078 kb</span>
+        <span>0.567 kb</span>
       </div>
       <div class="actions">
         <div class="button-group">
@@ -628,9 +614,21 @@
             <td class="blob-line-nums">
               <span id="L1" rel="#L1">1</span>
 <span id="L2" rel="#L2">2</span>
+<span id="L3" rel="#L3">3</span>
+<span id="L4" rel="#L4">4</span>
+<span id="L5" rel="#L5">5</span>
+<span id="L6" rel="#L6">6</span>
+<span id="L7" rel="#L7">7</span>
+<span id="L8" rel="#L8">8</span>
+<span id="L9" rel="#L9">9</span>
+<span id="L10" rel="#L10">10</span>
+<span id="L11" rel="#L11">11</span>
+<span id="L12" rel="#L12">12</span>
+<span id="L13" rel="#L13">13</span>
+<span id="L14" rel="#L14">14</span>
 
             </td>
-            <td class="blob-line-code"><div class="code-body highlight"><pre><div class='line' id='LC1'><span class="nb">puts</span> <span class="s1">&#39;Olá, mundo!&#39;</span></div><div class='line' id='LC2'><span class="nb">puts</span> <span class="s1">&#39;O encoding padrão de arquivos em Ruby é _______!&#39;</span></div></pre></div></td>
+            <td class="blob-line-code"><div class="code-body highlight"><pre><div class='line' id='LC1'><span class="c1"># Este arquivo é executado corretamente na sua máquina virtual (Vagrant)?</span></div><div class='line' id='LC2'><span class="c1"># E no servidor remoto da Infosimples?</span></div><div class='line' id='LC3'><br/></div><div class='line' id='LC4'><span class="c1"># Se, em algum dos casos, o arquivo não puder ser executado, qual é o problema?</span></div><div class='line' id='LC5'><span class="c1"># Corrija o problema alterando este arquivo, se for o caso.</span></div><div class='line' id='LC6'><br/></div><div class='line' id='LC7'><span class="c1"># Para executar no servidor remoto, executar os seguintes comandos:</span></div><div class='line' id='LC8'><span class="c1"># $ ssh {username}@server.devsoft.infosimples.com</span></div><div class='line' id='LC9'><span class="c1"># $ ruby /home/shared/ex6.2.rb</span></div><div class='line' id='LC10'><br/></div><div class='line' id='LC11'><span class="nb">puts</span> <span class="s1">&#39;Olá, mundo!&#39;</span></div><div class='line' id='LC12'><span class="nb">puts</span> <span class="s2">&quot;O encoding padrão de arquivos em Ruby (versão </span><span class="si">#{</span><span class="no">RUBY_VERSION</span><span class="si">}</span><span class="s2">) é _______!&quot;</span></div><div class='line' id='LC13'><br/></div><div class='line' id='LC14'><span class="c1"># Qual é o encoding padrão em cada versão do Ruby?</span></div></pre></div></td>
           </tr>
         </table>
   </div>
@@ -673,7 +671,7 @@
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2014 <span title="0.05420s from github-fe133-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2014 <span title="0.06276s from github-fe124-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms">Terms</a></li>
         <li><a href="/site/privacy">Privacy</a></li>
         <li><a href="/security">Security</a></li>

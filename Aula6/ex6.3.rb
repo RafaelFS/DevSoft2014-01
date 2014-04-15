@@ -29,7 +29,7 @@
     <meta name="msapplication-TileImage" content="/windows-tile.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="selected-link" value="repo_source" data-pjax-transient />
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="8F6B6633:013D:17E592C:534DAC23" name="octolytics-dimension-request_id" /><meta content="643475" name="octolytics-actor-id" /><meta content="RafaelFS" name="octolytics-actor-login" /><meta content="0b382ae5d5afda01dd9faa7036b4e8d3990141941926883cb43773e76ce8f718" name="octolytics-actor-hash" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="8F6B6633:5E4D:3ED6F:534DBEA0" name="octolytics-dimension-request_id" /><meta content="643475" name="octolytics-actor-id" /><meta content="RafaelFS" name="octolytics-actor-login" /><meta content="0b382ae5d5afda01dd9faa7036b4e8d3990141941926883cb43773e76ce8f718" name="octolytics-actor-hash" />
     
 
     
@@ -50,7 +50,7 @@
         
       <meta http-equiv="x-pjax-version" content="100f818207d1a40887ccd26a868fad14">
 
-        <link data-pjax-transient rel='permalink' href='/infosimples/DevSoft-2014-01/blob/ffe9169fc911b5072ef69b90a465b180cc4478bd/Week%206/Exercises/ex6.3.rb'>
+        <link data-pjax-transient rel='permalink' href='/infosimples/DevSoft-2014-01/blob/0878226347dcda193886674222c0ef7c52d42146/Week%206/Exercises/ex6.3.rb'>
 
   <meta name="description" content="DevSoft-2014-01 - Repository for things related to the DevSoft course." />
 
@@ -91,7 +91,7 @@
     data-username="RafaelFS"
       data-repo="infosimples/DevSoft-2014-01"
       data-branch="master"
-      data-sha="e1f709d695e1cc256255fa3f4d999c060a47261f"
+      data-sha="b4dc7d21c8fe178b8e91c455f5df1aaf0a646374"
   >
   <div class="display hidden"></div>
 </div>
@@ -474,7 +474,7 @@
           
 
 
-<!-- blob contrib key: blob_contributors:v21:9fad41c60ee141aa52f29bb283fa795b -->
+<!-- blob contrib key: blob_contributors:v21:72cb791e1128f6516f8a82bb7ce2fe62 -->
 
 <p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
 
@@ -567,9 +567,9 @@
   <div class="commit file-history-tease">
     <img class="main-avatar" height="24" src="https://1.gravatar.com/avatar/bb7c3c75368c429820f5cc85d96eac67?d=https%3A%2F%2Fa248.e.akamai.net%2Fassets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="24" />
     <span class="author"><span rel="author">Débora Setton</span></span>
-    <time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-04-15T17:30:23-03:00" title="2014-04-15 17:30:23">April 15, 2014</time>
+    <time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-04-15T19:03:57-03:00" title="2014-04-15 19:03:57">April 15, 2014</time>
     <div class="commit-title">
-        <a href="/infosimples/DevSoft-2014-01/commit/d853baf7926ff402417cd3a0d07fc41744930d6e" class="message" data-pjax="true" title="Add Week 6 exercises.">Add Week 6 exercises.</a>
+        <a href="/infosimples/DevSoft-2014-01/commit/353ea93a7e8d61be4c7aada5cddb4a0b98d0ce4d" class="message" data-pjax="true" title="Adds ex6.3, 6.4 and updates slides.">Adds ex6.3, 6.4 and updates slides.</a>
     </div>
 
     <div class="participation">
@@ -590,9 +590,9 @@
         <span class="icon"><b class="octicon octicon-file-text"></b></span>
         <span class="mode" title="File Mode">file</span>
         <span class="meta-divider"></span>
-          <span>11 lines (6 sloc)</span>
+          <span>116 lines (87 sloc)</span>
           <span class="meta-divider"></span>
-        <span>0.116 kb</span>
+        <span>3.214 kb</span>
       </div>
       <div class="actions">
         <div class="button-group">
@@ -632,9 +632,114 @@
 <span id="L8" rel="#L8">8</span>
 <span id="L9" rel="#L9">9</span>
 <span id="L10" rel="#L10">10</span>
+<span id="L11" rel="#L11">11</span>
+<span id="L12" rel="#L12">12</span>
+<span id="L13" rel="#L13">13</span>
+<span id="L14" rel="#L14">14</span>
+<span id="L15" rel="#L15">15</span>
+<span id="L16" rel="#L16">16</span>
+<span id="L17" rel="#L17">17</span>
+<span id="L18" rel="#L18">18</span>
+<span id="L19" rel="#L19">19</span>
+<span id="L20" rel="#L20">20</span>
+<span id="L21" rel="#L21">21</span>
+<span id="L22" rel="#L22">22</span>
+<span id="L23" rel="#L23">23</span>
+<span id="L24" rel="#L24">24</span>
+<span id="L25" rel="#L25">25</span>
+<span id="L26" rel="#L26">26</span>
+<span id="L27" rel="#L27">27</span>
+<span id="L28" rel="#L28">28</span>
+<span id="L29" rel="#L29">29</span>
+<span id="L30" rel="#L30">30</span>
+<span id="L31" rel="#L31">31</span>
+<span id="L32" rel="#L32">32</span>
+<span id="L33" rel="#L33">33</span>
+<span id="L34" rel="#L34">34</span>
+<span id="L35" rel="#L35">35</span>
+<span id="L36" rel="#L36">36</span>
+<span id="L37" rel="#L37">37</span>
+<span id="L38" rel="#L38">38</span>
+<span id="L39" rel="#L39">39</span>
+<span id="L40" rel="#L40">40</span>
+<span id="L41" rel="#L41">41</span>
+<span id="L42" rel="#L42">42</span>
+<span id="L43" rel="#L43">43</span>
+<span id="L44" rel="#L44">44</span>
+<span id="L45" rel="#L45">45</span>
+<span id="L46" rel="#L46">46</span>
+<span id="L47" rel="#L47">47</span>
+<span id="L48" rel="#L48">48</span>
+<span id="L49" rel="#L49">49</span>
+<span id="L50" rel="#L50">50</span>
+<span id="L51" rel="#L51">51</span>
+<span id="L52" rel="#L52">52</span>
+<span id="L53" rel="#L53">53</span>
+<span id="L54" rel="#L54">54</span>
+<span id="L55" rel="#L55">55</span>
+<span id="L56" rel="#L56">56</span>
+<span id="L57" rel="#L57">57</span>
+<span id="L58" rel="#L58">58</span>
+<span id="L59" rel="#L59">59</span>
+<span id="L60" rel="#L60">60</span>
+<span id="L61" rel="#L61">61</span>
+<span id="L62" rel="#L62">62</span>
+<span id="L63" rel="#L63">63</span>
+<span id="L64" rel="#L64">64</span>
+<span id="L65" rel="#L65">65</span>
+<span id="L66" rel="#L66">66</span>
+<span id="L67" rel="#L67">67</span>
+<span id="L68" rel="#L68">68</span>
+<span id="L69" rel="#L69">69</span>
+<span id="L70" rel="#L70">70</span>
+<span id="L71" rel="#L71">71</span>
+<span id="L72" rel="#L72">72</span>
+<span id="L73" rel="#L73">73</span>
+<span id="L74" rel="#L74">74</span>
+<span id="L75" rel="#L75">75</span>
+<span id="L76" rel="#L76">76</span>
+<span id="L77" rel="#L77">77</span>
+<span id="L78" rel="#L78">78</span>
+<span id="L79" rel="#L79">79</span>
+<span id="L80" rel="#L80">80</span>
+<span id="L81" rel="#L81">81</span>
+<span id="L82" rel="#L82">82</span>
+<span id="L83" rel="#L83">83</span>
+<span id="L84" rel="#L84">84</span>
+<span id="L85" rel="#L85">85</span>
+<span id="L86" rel="#L86">86</span>
+<span id="L87" rel="#L87">87</span>
+<span id="L88" rel="#L88">88</span>
+<span id="L89" rel="#L89">89</span>
+<span id="L90" rel="#L90">90</span>
+<span id="L91" rel="#L91">91</span>
+<span id="L92" rel="#L92">92</span>
+<span id="L93" rel="#L93">93</span>
+<span id="L94" rel="#L94">94</span>
+<span id="L95" rel="#L95">95</span>
+<span id="L96" rel="#L96">96</span>
+<span id="L97" rel="#L97">97</span>
+<span id="L98" rel="#L98">98</span>
+<span id="L99" rel="#L99">99</span>
+<span id="L100" rel="#L100">100</span>
+<span id="L101" rel="#L101">101</span>
+<span id="L102" rel="#L102">102</span>
+<span id="L103" rel="#L103">103</span>
+<span id="L104" rel="#L104">104</span>
+<span id="L105" rel="#L105">105</span>
+<span id="L106" rel="#L106">106</span>
+<span id="L107" rel="#L107">107</span>
+<span id="L108" rel="#L108">108</span>
+<span id="L109" rel="#L109">109</span>
+<span id="L110" rel="#L110">110</span>
+<span id="L111" rel="#L111">111</span>
+<span id="L112" rel="#L112">112</span>
+<span id="L113" rel="#L113">113</span>
+<span id="L114" rel="#L114">114</span>
+<span id="L115" rel="#L115">115</span>
 
             </td>
-            <td class="blob-line-code"><div class="code-body highlight"><pre><div class='line' id='LC1'><span class="c1"># -----------------</span></div><div class='line' id='LC2'><span class="c1"># Introdução</span></div><div class='line' id='LC3'><span class="c1"># -----------------</span></div><div class='line' id='LC4'><br/></div><div class='line' id='LC5'><br/></div><div class='line' id='LC6'><br/></div><div class='line' id='LC7'><span class="c1"># -----------------</span></div><div class='line' id='LC8'><span class="c1"># Exercício 6.3</span></div><div class='line' id='LC9'><span class="c1"># -----------------</span></div><div class='line' id='LC10'><br/></div></pre></div></td>
+            <td class="blob-line-code"><div class="code-body highlight"><pre><div class='line' id='LC1'><span class="c1"># encoding: utf-8</span></div><div class='line' id='LC2'><br/></div><div class='line' id='LC3'><span class="c1"># -----------------</span></div><div class='line' id='LC4'><span class="c1"># Introdução</span></div><div class='line' id='LC5'><span class="c1"># -----------------</span></div><div class='line' id='LC6'><br/></div><div class='line' id='LC7'><span class="c1"># O objetivo deste exercício é avaliar como o desempenho de um determinado</span></div><div class='line' id='LC8'><span class="c1"># programa ou trecho de código varia de acordo com o número de threads</span></div><div class='line' id='LC9'><span class="c1"># utilizadas.</span></div><div class='line' id='LC10'><br/></div><div class='line' id='LC11'><span class="c1"># Vamos avaliar o uso de threads em dois tipos de programa: o primeiro é do tipo</span></div><div class='line' id='LC12'><span class="c1"># &quot;IO-intensive&quot;, isto é, um programa que gasta a maior parte do tempo em</span></div><div class='line' id='LC13'><span class="c1"># execuções de I/O (entrada e saída), como fazer o download de arquivos da</span></div><div class='line' id='LC14'><span class="c1"># Internet.</span></div><div class='line' id='LC15'><br/></div><div class='line' id='LC16'><span class="c1"># O segundo programa é do tipo &quot;CPU-intensive&quot;, isto é, um programa que gasta a</span></div><div class='line' id='LC17'><span class="c1"># maior parte do tempo fazendo cálculos (utilizando o processador).</span></div><div class='line' id='LC18'><br/></div><div class='line' id='LC19'><span class="c1"># Para cada um destes programas, você deverá escrever três versões dele:</span></div><div class='line' id='LC20'><span class="c1"># 1) Uma versão sequencial (que não usa threads)</span></div><div class='line' id='LC21'><span class="c1"># 2) Uma versão que usa um número pequeno de threads</span></div><div class='line' id='LC22'><span class="c1"># 3) Uma versão que usa um número muito grande de threads</span></div><div class='line' id='LC23'><br/></div><div class='line' id='LC24'><span class="c1"># A biblioteca de benchmark do Ruby</span></div><div class='line' id='LC25'><span class="c1"># (http://ruby-doc.org/stdlib-1.9.2/libdoc/benchmark/rdoc/Benchmark.html)</span></div><div class='line' id='LC26'><span class="c1"># será utilizada para comparar o desempenho destas diferentes versões.</span></div><div class='line' id='LC27'><br/></div><div class='line' id='LC28'><span class="c1"># -----------------</span></div><div class='line' id='LC29'><span class="c1"># Exercício 6.4</span></div><div class='line' id='LC30'><span class="c1"># -----------------</span></div><div class='line' id='LC31'><br/></div><div class='line' id='LC32'><span class="c1"># Importa a biblioteca de benchmark do Ruby</span></div><div class='line' id='LC33'><span class="nb">require</span> <span class="s1">&#39;benchmark&#39;</span></div><div class='line' id='LC34'><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span></div><div class='line' id='LC35'><br/></div><div class='line' id='LC36'><span class="c1"># Cada versão será executada N vezes, para garantir condições médias de</span></div><div class='line' id='LC37'><span class="c1"># desempenho.</span></div><div class='line' id='LC38'><span class="n">N</span> <span class="o">=</span> <span class="mi">50_000</span></div><div class='line' id='LC39'><br/></div><div class='line' id='LC40'><span class="k">def</span> <span class="nf">links</span></div><div class='line' id='LC41'><br/></div><div class='line' id='LC42'>&nbsp;&nbsp;<span class="c1"># Esta função baixa todos os links desta página:</span></div><div class='line' id='LC43'>&nbsp;&nbsp;<span class="c1"># http://en.wikipedia.org/wiki/List_of_programming_languages</span></div><div class='line' id='LC44'><br/></div><div class='line' id='LC45'>&nbsp;&nbsp;<span class="c1"># Vamos utilizar uma biblioteca chamada Mechanize para fazer download</span></div><div class='line' id='LC46'>&nbsp;&nbsp;<span class="c1"># dos links.</span></div><div class='line' id='LC47'><br/></div><div class='line' id='LC48'>&nbsp;&nbsp;<span class="n">m</span> <span class="o">=</span> <span class="no">Mechanize</span><span class="o">.</span><span class="n">new</span></div><div class='line' id='LC49'><br/></div><div class='line' id='LC50'>&nbsp;&nbsp;<span class="c1"># Baixa a página principal, que tem todos os links.</span></div><div class='line' id='LC51'>&nbsp;&nbsp;<span class="n">m</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://en.wikipedia.org/wiki/List_of_programming_languages&#39;</span><span class="p">)</span></div><div class='line' id='LC52'><br/></div><div class='line' id='LC53'>&nbsp;&nbsp;<span class="n">links</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">page</span><span class="o">.</span><span class="n">links</span><span class="o">.</span></div><div class='line' id='LC54'>&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">link</span><span class="o">|</span> <span class="n">link</span><span class="o">.</span><span class="n">href</span> <span class="p">}</span><span class="o">.</span></div><div class='line' id='LC55'>&nbsp;&nbsp;&nbsp;&nbsp;<span class="nb">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">path</span><span class="o">|</span> <span class="n">path</span> <span class="o">=~</span> <span class="sr">/\A\/wiki/</span> <span class="p">}</span><span class="o">.</span></div><div class='line' id='LC56'>&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">path</span><span class="o">|</span> <span class="s2">&quot;http://en.wikipedia.org/</span><span class="si">#{</span><span class="n">path</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span></div><div class='line' id='LC57'><br/></div><div class='line' id='LC58'><span class="k">end</span></div><div class='line' id='LC59'><br/></div><div class='line' id='LC60'><span class="k">def</span> <span class="nf">io_v1</span></div><div class='line' id='LC61'>&nbsp;&nbsp;<span class="c1"># Versão sequencial do programa IO-intensive.</span></div><div class='line' id='LC62'>&nbsp;&nbsp;<span class="c1"># Escreva aqui uma função que itera sobre os links retornados pela</span></div><div class='line' id='LC63'>&nbsp;&nbsp;<span class="c1"># função links e usa o Mechanize para baixar cada link.</span></div><div class='line' id='LC64'>&nbsp;&nbsp;<span class="c1"># Utilize uma nova instância do Mechanize por iteração.</span></div><div class='line' id='LC65'><span class="k">end</span></div><div class='line' id='LC66'><br/></div><div class='line' id='LC67'><span class="k">def</span> <span class="nf">io_v2</span></div><div class='line' id='LC68'>&nbsp;&nbsp;<span class="c1"># Versão do IO-intensive com 10 threads.</span></div><div class='line' id='LC69'><span class="k">end</span></div><div class='line' id='LC70'><br/></div><div class='line' id='LC71'><span class="k">def</span> <span class="nf">io_v3</span></div><div class='line' id='LC72'>&nbsp;&nbsp;<span class="c1"># Versão do IO-intensive com 100 threads.</span></div><div class='line' id='LC73'><span class="k">end</span></div><div class='line' id='LC74'><br/></div><div class='line' id='LC75'><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></div><div class='line' id='LC76'>&nbsp;&nbsp;<span class="mi">500_000</span><span class="o">.</span><span class="n">downto</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="ss">:+</span><span class="p">)</span></div><div class='line' id='LC77'><span class="k">end</span></div><div class='line' id='LC78'><br/></div><div class='line' id='LC79'><span class="k">def</span> <span class="nf">cpu_v1</span></div><div class='line' id='LC80'>&nbsp;&nbsp;<span class="c1"># Versão sequencial do programa CPU-intensive.</span></div><div class='line' id='LC81'>&nbsp;&nbsp;<span class="c1"># Escreva uma função que chama a função sum(n) para todos os inteiros</span></div><div class='line' id='LC82'>&nbsp;&nbsp;<span class="c1"># entre 0 e 100.</span></div><div class='line' id='LC83'><span class="k">end</span></div><div class='line' id='LC84'><br/></div><div class='line' id='LC85'><span class="k">def</span> <span class="nf">cpu_v2</span></div><div class='line' id='LC86'>&nbsp;&nbsp;<span class="c1"># Versão do CPU-intensive com 10 threads.</span></div><div class='line' id='LC87'><span class="k">end</span></div><div class='line' id='LC88'><br/></div><div class='line' id='LC89'><span class="k">def</span> <span class="nf">cpu_v3</span></div><div class='line' id='LC90'>&nbsp;&nbsp;<span class="c1"># Versão do CPU-intensive com 100 threads.</span></div><div class='line' id='LC91'><span class="k">end</span></div><div class='line' id='LC92'><br/></div><div class='line' id='LC93'><span class="nb">puts</span> <span class="s2">&quot;Execução dos programas &#39;IO-intensive&#39; (download de arquivos):&quot;</span></div><div class='line' id='LC94'><span class="nb">puts</span> <span class="s2">&quot;-------------------------------------------------------------</span><span class="se">\n\n</span><span class="s2">&quot;</span></div><div class='line' id='LC95'><br/></div><div class='line' id='LC96'><span class="no">Benchmark</span><span class="o">.</span><span class="n">bm</span> <span class="k">do</span> <span class="o">|</span><span class="n">reporter</span><span class="o">|</span></div><div class='line' id='LC97'>&nbsp;&nbsp;<span class="n">reporter</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">io_v1</span> <span class="p">}</span></div><div class='line' id='LC98'>&nbsp;&nbsp;<span class="n">reporter</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">io_v2</span> <span class="p">}</span></div><div class='line' id='LC99'>&nbsp;&nbsp;<span class="n">reporter</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">io_v3</span> <span class="p">}</span></div><div class='line' id='LC100'><span class="k">end</span></div><div class='line' id='LC101'><br/></div><div class='line' id='LC102'><span class="nb">puts</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span></div><div class='line' id='LC103'><span class="nb">puts</span> <span class="s2">&quot;Execução dos programas &#39;CPU-intensive (cálculo de fatorial)&#39;:&quot;</span></div><div class='line' id='LC104'><span class="nb">puts</span> <span class="s2">&quot;-------------------------------------------------------------</span><span class="se">\n\n</span><span class="s2">&quot;</span></div><div class='line' id='LC105'><br/></div><div class='line' id='LC106'><span class="no">Benchmark</span><span class="o">.</span><span class="n">bm</span> <span class="k">do</span> <span class="o">|</span><span class="n">reporter</span><span class="o">|</span></div><div class='line' id='LC107'>&nbsp;&nbsp;<span class="n">reporter</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">cpu_v1</span> <span class="p">}</span></div><div class='line' id='LC108'>&nbsp;&nbsp;<span class="n">reporter</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">cpu_v2</span> <span class="p">}</span></div><div class='line' id='LC109'>&nbsp;&nbsp;<span class="n">reporter</span><span class="o">.</span><span class="n">report</span> <span class="p">{</span> <span class="n">cpu_v3</span> <span class="p">}</span></div><div class='line' id='LC110'><span class="k">end</span></div><div class='line' id='LC111'><br/></div><div class='line' id='LC112'><span class="c1">#</span></div><div class='line' id='LC113'><span class="c1"># Escreva as suas conclusões sobre como o desempenho variou para cada versão</span></div><div class='line' id='LC114'><span class="c1"># (melhorou ou piorou?) e para cada tipo de programa.</span></div><div class='line' id='LC115'><span class="c1">#</span></div></pre></div></td>
           </tr>
         </table>
   </div>
@@ -677,7 +782,7 @@
     </a>
 
     <ul class="site-footer-links">
-      <li>&copy; 2014 <span title="0.05021s from github-fe116-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2014 <span title="0.05477s from github-fe136-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="/site/terms">Terms</a></li>
         <li><a href="/site/privacy">Privacy</a></li>
         <li><a href="/security">Security</a></li>
