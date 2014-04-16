@@ -71,11 +71,38 @@ end
 
 def io_v2
   # Versão do IO-intensive com 10 threads.
-
+  threads = []
+  linklist = links
+  n = linklist.length
+  k = n/10
+  10.times do |i|
+    t = Thread.new {
+      linklist[(k*i)..(k*i + k - 1)].each do |link|
+        m = Mechanize.new
+        m.get(link)
+      end
+    }
+    threads << t
+  end
+  threads.each { |t| t.join }
 end
 
 def io_v3
   # Versão do IO-intensive com 100 threads.
+  threads = []
+  linklist = links
+  n = linklist.length
+  k = n/100
+  100.times do |i|
+    t = Thread.new {
+      linklist[(k*i)..(k*i + k - 1)].each do |link|
+        m = Mechanize.new
+        m.get(link)
+      end
+    }
+    threads << t
+  end
+  threads.each { |t| t.join }
 end
 
 def sum(n)
