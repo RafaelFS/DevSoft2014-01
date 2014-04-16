@@ -54,7 +54,7 @@ def links
     map { |link| link.href }.
     select { |path| path =~ /\A\/wiki/ }.
     map { |path| "http://en.wikipedia.org/#{path}" }
-
+  links[0..200]
 end
 
 def io_v1
@@ -62,10 +62,16 @@ def io_v1
   # Escreva aqui uma função que itera sobre os links retornados pela
   # função links e usa o Mechanize para baixar cada link.
   # Utilize uma nova instância do Mechanize por iteração.
+  linklist = links
+  linklist.each do |link| 
+    m = Mechanize.new
+    m.get(link)
+  end
 end
 
 def io_v2
   # Versão do IO-intensive com 10 threads.
+
 end
 
 def io_v3
