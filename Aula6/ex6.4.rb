@@ -132,3 +132,7 @@ end
 # 19:26 - [ESPORTE] Liga nacional de basquete tem recorde de público
 
 # Seu código aqui...
+str2= str.gsub(/\[(.*)\]/) do |match|
+  match.upcase
+end
+puts str2
