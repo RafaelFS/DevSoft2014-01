@@ -113,14 +113,41 @@ def cpu_v1
   # Versão sequencial do programa CPU-intensive.
   # Escreva uma função que chama a função sum(n) para todos os inteiros
   # entre 0 e 100.
+  101.times do |i|
+    sum(i)
+  end
 end
 
 def cpu_v2
   # Versão do CPU-intensive com 10 threads.
+  threads = []
+  10.times do |k|
+    t = Thread.new {
+      10.times do |i|
+        sum(k*10+i)
+      end
+      if k == 10
+        sum(101)
+      end
+    }
+    threads << t
+  end
+  threads.each { |t| t.join }
 end
 
 def cpu_v3
   # Versão do CPU-intensive com 100 threads.
+  threads = []
+  100.times do |k|
+    t = Thread.new {
+      sum(k)
+      if k == 100
+        sum(101)
+      end
+    }
+    threads << t
+  end
+  threads.each { |t| t.join }
 end
 
 puts "Execução dos programas 'IO-intensive' (download de arquivos):"
@@ -146,3 +173,11 @@ end
 # Escreva as suas conclusões sobre como o desempenho variou para cada versão
 # (melhorou ou piorou?) e para cada tipo de programa.
 #
+# Para as funções IO-intensive houve uma melhora com o aumento do número de 
+# threads, mas esse aumento deixou de ser significativo quando o número ficou 
+# muito grande.
+# Para as funções CPU-intensive, o aumento no número de threads provocou uma
+# piora no tempo de execução, devido ao aumento da complexidade do programa
+# ao criar mais threads.
+# Ou seja, a utilização de várias threads só é benéfica em casos específicos
+# (no caso estudado, nas funções de IO intensivo).
