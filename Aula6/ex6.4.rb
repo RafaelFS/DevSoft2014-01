@@ -91,6 +91,15 @@ STR
 # notícia, imprimi-la com o seguinte formato: "TEMA: TÍTULO (HORA)"
 
 # Seu código aqui...
+horarios = str.scan(/\d\d:\d\d/)
+horarios.each{|x| puts x}
+temas = str.scan(/\[([^\]]+)\]/)
+temas.each{|x| puts x}
+titulos = str.scan(/\] (.+)$/)
+titulos.each{|x| puts x}
+horarios.length.times do |i|
+	puts("#{temas[i]}:")
+end
 
 # 2) Quantas linhas existem nesta string?
 
