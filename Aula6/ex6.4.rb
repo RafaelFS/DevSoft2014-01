@@ -91,20 +91,22 @@ STR
 # notícia, imprimi-la com o seguinte formato: "TEMA: TÍTULO (HORA)"
 
 # Seu código aqui...
+noticias = []
 horarios = str.scan(/\d\d:\d\d/)
-horarios.each{|x| puts x}
 temas = str.scan(/\[([^\]]+)\]/)
-temas.each{|x| puts x}
 titulos = str.scan(/\] (.+)$/)
-titulos.each{|x| puts x}
 horarios.length.times do |i|
-	puts("#{temas[i]}:")
+	noticias << { hora: horarios[i], tema: temas[i], titulo: titulos[i]}
+end
+noticias.each do |x|
+	puts("#{x[:tema][0]}: #{x[:titulo][0]} (#{x[:hora]})")
 end
 
 # 2) Quantas linhas existem nesta string?
 
 # Seu código aqui...
-puts "Existem _____ linhas."
+linhas = str.scan(/(.)$/).length
+puts "Existem #{linhas} linhas."
 
 # 3) Quantas notícias de economia de falam sobre o dólar?
 
