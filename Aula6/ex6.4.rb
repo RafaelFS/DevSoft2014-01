@@ -111,7 +111,8 @@ puts "Existem #{linhas} linhas."
 # 3) Quantas notícias de economia de falam sobre o dólar?
 
 # Seu código aqui...
-puts "_____ notícias falam sobre o dólar."
+dolar = str.scan(/[economia].+dólar.+/).length
+puts "#{dolar} notícias falam sobre o dólar."
 
 # 4) Imprimir todos os horários das notícias que contém a palavra golfe.
 
