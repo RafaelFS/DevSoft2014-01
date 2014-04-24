@@ -111,11 +111,14 @@ puts "Existem #{linhas} linhas."
 # 3) Quantas notícias de economia de falam sobre o dólar?
 
 # Seu código aqui...
-dolar = str.scan(/[economia].+dólar.+/).length
+dolar = str.scan(/\[economia\].+dólar.+/).length
 puts "#{dolar} notícias falam sobre o dólar."
 
 # 4) Imprimir todos os horários das notícias que contém a palavra golfe.
-
+hasgolfe = str.scan(/(\d\d:\d\d).*golfe.*/)
+hasgolfe.each do |x|
+  puts x[0]
+end
 # 5) Substituir todos os temas de notícias pela sua versão em maiúsculas e
 # imprimir a string resultante. Ou seja: seu código deverá imprimir o seguinte:
 
