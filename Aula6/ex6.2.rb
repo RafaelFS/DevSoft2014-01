@@ -9,6 +9,8 @@
 # $ ruby /home/shared/ex6.2.rb
 
 puts 'Olá, mundo!'
-puts "O encoding padrão de arquivos em Ruby (versão #{RUBY_VERSION}) é _______!"
+puts "O encoding padrão de arquivos em Ruby (versão #{RUBY_VERSION}) é #{__ENCODING__}!"
 
 # Qual é o encoding padrão em cada versão do Ruby?
+# Na versão 2.1.1 (local), o encoding padrão é UTF-8
+# Na versão 1.9.3 (servidor remoto), o encoding padrão é US-ASCII
