@@ -80,6 +80,15 @@ body {
 
 }
 
+
+.custom-navbar-text{
+  color: #fff;
+  margin-bottom:0;
+  line-height:50px;
+  font-size: 28px;
+}
+
+
 /*Footer */
 
 /* Sticky footer styles
@@ -155,3 +164,11 @@ body {
 }
 
 
+/*
+ * My own classes
+ */
+
+.welcome-message {
+  position: absolute;
+  top: 30px;
+}
