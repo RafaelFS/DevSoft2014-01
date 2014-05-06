@@ -5,8 +5,8 @@ require 'mechanize'
 ################################################
 ##           !USE YOUR CREDENTIALS            ##
 ################################################
-USERNAME = 'xxxxxxx' # Use your username!
-PASSWORD = 'xxxxxxx' # Use your password!
+USERNAME = 'aluno' # Use your username!
+PASSWORD = '12345' # Use your password!
 
 #
 # Helper function that saves a HTML file on the html directory.
