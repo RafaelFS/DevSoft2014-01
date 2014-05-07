@@ -5,9 +5,9 @@ require 'mechanize'
 ################################################
 ##           !USE YOUR CREDENTIALS            ##
 ################################################
-USERNAME = xxxxx # Use your username!
-PASSWORD = xxxxx # Use your password!
-
+USERNAME = 'XXXX' # Use your username!
+PASSWORD = 'XXXX'
+ # Use your password!
 #
 # Helper function that saves a HTML file on the html directory.
 #
@@ -59,3 +59,10 @@ save_html('after_login', mechanize.page.body)
 ################################################
 ##         TODO: CONTINUE FROM HERE!          ##
 ################################################
+10.times do |i|
+  currentid = 50 + i
+  puts currentid
+  mechanize.get("http://estagios.pcs.usp.br/aluno/vagas/exibirVaga.aspx?id=#{currentid}")
+  save_html("vagaid#{currentid}", mechanize.page.body)
+end
+
