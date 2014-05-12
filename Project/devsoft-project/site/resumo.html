@@ -83,57 +83,6 @@
   <script src="javascripts/example.js"></script>
   <script src="javascripts/highcharts.js"></script>
   <script src="javascripts/exporting.js"></script>
-
-  <script type="text/javascript">
-          $(function () {
-              var chart;
-              
-              $(document).ready(function () {
-                
-                // Build the chart
-                  $('#graph').highcharts({
-                      chart: {
-                          plotBackgroundColor: null,
-                          plotBorderWidth: null,
-                          plotShadow: false
-                      },
-                      title: {
-                          text: 'Browser market shares at a specific website, 2014'
-                      },
-                      tooltip: {
-                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                      },
-                      plotOptions: {
-                          pie: {
-                              allowPointSelect: true,
-                              cursor: 'pointer',
-                              dataLabels: {
-                                  enabled: false
-                              },
-                              showInLegend: true
-                          }
-                      },
-                      series: [{
-                          type: 'pie',
-                          name: 'Browser share',
-                          data: [
-                              ['Firefox',   45.0],
-                              ['IE',       26.8],
-                              {
-                                  name: 'Chrome',
-                                  y: 12.8,
-                                  sliced: true,
-                                  selected: true
-                              },
-                              ['Safari',    8.5],
-                              ['Opera',     6.2],
-                              ['Others',   0.7]
-                          ]
-                      }]
-                  });
-              })
-              
-          });
-  </script> 
+  <script src="javascripts/pie.js"></script> 
 </body>
 </html>
