@@ -5,8 +5,8 @@ require 'mechanize'
 ################################################
 ##           !USE YOUR CREDENTIALS            ##
 ################################################
-USERNAME = 'XXXX' # Use your username!
-PASSWORD = 'XXXX'
+USERNAME = 'aluno' # Use your username!
+PASSWORD = '12345'
  # Use your password!
 #
 # Helper function that saves a HTML file on the html directory.
@@ -17,6 +17,28 @@ PASSWORD = 'XXXX'
 def save_html(filename, body)
   File.open("saved_html/#{filename}.html", "w") do |f|
     f.write(body.force_encoding('utf-8'))
+  end
+end
+
+
+class Vaga 
+  attr_reader :id, :habilitacao, :titulo, :empresa, :atuacao, :descricao, :requisitos, :beneficios, :contatos, :data, :validade, :nvagas
+  def initialize(id, habilitacao, titulo, empresa, atuacao, descricao, requisitos, beneficios, contatos, data, validade, nvagas) 
+    @id = id 
+    @habilitacao = habilitacao
+    @titulo = titulo
+    @empresa = empresa
+    @atuacao = atuacao
+    @descricao = descricao
+    @requisitos = requisitos
+    @beneficios = beneficios
+    @contatos = contatos
+    @data = data
+    @validade = validade
+    @nvagas = nvagas
+  end 
+  def to_s 
+    "Vaga: #{@id}--#{@habilitacao} #{@titulo} #{@empresa} #{@atuacao} #{@descricao} #{@requisitos} #{@beneficios} #{@contatos} #{@data} #{@validade} #{@nvagas}" 
   end
 end
 
@@ -59,10 +81,26 @@ save_html('after_login', mechanize.page.body)
 ################################################
 ##         TODO: CONTINUE FROM HERE!          ##
 ################################################
+f = File.new("estagios",  "w+")
+vagas = []
 10.times do |i|
   currentid = 50 + i
   puts currentid
   mechanize.get("http://estagios.pcs.usp.br/aluno/vagas/exibirVaga.aspx?id=#{currentid}")
   save_html("vagaid#{currentid}", mechanize.page.body)
+  doc = mechanize.page.parser
+  habilitacao =  doc.css('#ContentPlaceHolder1_lblHabilitacao').text
+  titulo =  doc.css('#ContentPlaceHolder1_lblTitulo').text
+  empresa =  doc.css('#ContentPlaceHolder1_lblEmpresa').text
+  atuacao =  doc.css('#ContentPlaceHolder1_lblArea').text
+  descricao =  doc.css('#ContentPlaceHolder1_lblDescricao').text
+  requisitos =  doc.css('#ContentPlaceHolder1_lblRequisitos').text
+  beneficios =  doc.css('#ContentPlaceHolder1_lblBeneficios').text
+  contatos =  doc.css('#ContentPlaceHolder1_lblTContatos').text
+  data =  doc.css('#ContentPlaceHolder1_lblDataAnuncio').text
+  validade =  doc.css('#ContentPlaceHolder1_lblDataValidade').text
+  nvagas =  doc.css('#ContentPlaceHolder1_lblNumeroVagas').text
+  vagas[i] = Vaga.new(currentid, habilitacao, titulo, empresa, atuacao, descricao, requisitos, beneficios, contatos, data, validade, nvagas)
+  puts vagas[i].to_s
 end
 
