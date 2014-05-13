@@ -1,7 +1,7 @@
 # encoding:utf-8
 
 require 'mechanize'
-
+require 'json'
 ################################################
 ##           !USE YOUR CREDENTIALS            ##
 ################################################
@@ -39,6 +39,11 @@ class Vaga
   end 
   def to_s 
     "Vaga: #{@id}--#{@habilitacao} #{@titulo} #{@empresa} #{@atuacao} #{@descricao} #{@requisitos} #{@beneficios} #{@contatos} #{@data} #{@validade} #{@nvagas}" 
+  end
+  def to_json
+    {'id' => @id, 'habilitacao' => @habilitacao,  'titulo' => @titulo, 'empresa' => @empresa, 
+     'atuacao' => @atuacao, 'descricao' => @descricao, 'requisitos' => @requisitos, 
+     'beneficios' => @beneficios, 'contatos' => @contatos, 'data' => @data, 'validade' => @validade, 'vagas' => @nvagas}.to_json
   end
 end
 
@@ -101,6 +106,6 @@ vagas = []
   validade =  doc.css('#ContentPlaceHolder1_lblDataValidade').text
   nvagas =  doc.css('#ContentPlaceHolder1_lblNumeroVagas').text
   vagas[i] = Vaga.new(currentid, habilitacao, titulo, empresa, atuacao, descricao, requisitos, beneficios, contatos, data, validade, nvagas)
-  puts vagas[i].to_s
+  f.puts vagas[i].to_json
 end
 
