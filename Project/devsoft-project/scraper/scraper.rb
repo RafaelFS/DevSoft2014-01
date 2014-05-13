@@ -86,14 +86,14 @@ save_html('after_login', mechanize.page.body)
 ################################################
 ##         TODO: CONTINUE FROM HERE!          ##
 ################################################
-f = File.new("estagios",  "w+")
+f = File.new("../site/data/estagios",  "w+")
 f.print "{\"estagios\":["
 vagas = []
-10.times do |i|
-  currentid = 50 + i
+100.times do |i|
+  currentid = 0 + i
   puts currentid
   mechanize.get("http://estagios.pcs.usp.br/aluno/vagas/exibirVaga.aspx?id=#{currentid}")
-  save_html("vagaid#{currentid}", mechanize.page.body)
+  #save_html("vagaid#{currentid}", mechanize.page.body)
   doc = mechanize.page.parser
   habilitacao =  doc.css('#ContentPlaceHolder1_lblHabilitacao').text
   titulo =  doc.css('#ContentPlaceHolder1_lblTitulo').text

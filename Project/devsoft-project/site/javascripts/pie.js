@@ -5,8 +5,19 @@ $(function () {
                 $.getJSON("data/estagios", function( data ) {
                   console.log(data.estagios);
                   console.log(data.estagios.length);
-              
+                  var totalnumber = data.estagios.length;
+                  var blanknumber = 0;
+                  $.each(data.estagios, function( index, value ){
+                      if(value.requisitos =="") {
+                        blanknumber += 1;
+                      }
+                  });
+                  console.log("blanknumber = " + blanknumber);
+                  var validnumber = totalnumber - blanknumber;
+                  var validpercent = 100*Math.round(validnumber/totalnumber);
+                  var blankpercent = 100*Math.round(blankpercent/totalnumber);
                   $('#acessadas').append( "Total de páginas acessadas: "+data.estagios.length);
+                  $('#datasummary').append( "Total: "+data.estagios.length+"<br/>Válidas: "+validnumber+"<br/>Em branco:"+blanknumber);
                 // Build the chart
                   $('#graph').highcharts({
                       chart: {
@@ -15,7 +26,7 @@ $(function () {
                           plotShadow: false
                       },
                       title: {
-                          text: 'Browser market shares at a specific website, 2014'
+                          text: 'Resumo das vagas acessadas'
                       },
                       tooltip: {
                         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -32,19 +43,10 @@ $(function () {
                       },
                       series: [{
                           type: 'pie',
-                          name: 'Browser share',
+                          name: 'Número de vagas',
                           data: [
-                              ['Firefox',   45.0],
-                              ['IE',       26.8],
-                              {
-                                  name: 'Chrome',
-                                  y: 12.8,
-                                  sliced: true,
-                                  selected: true
-                              },
-                              ['Safari',    8.5],
-                              ['Opera',     6.2],
-                              ['Others',   0.7]
+                              ['Válidas',   validpercent],
+                              ['Em branco',       blankpercent],
                           ]
                       }]
                   });
