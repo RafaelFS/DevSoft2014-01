@@ -2,7 +2,11 @@ $(function () {
               var chart;
               
               $(document).ready(function () {
-                
+                $.getJSON("data/estagios", function( data ) {
+                  console.log(data.estagios);
+                  console.log(data.estagios.length);
+              
+                  $('#acessadas').append( "Total de páginas acessadas: "+data.estagios.length);
                 // Build the chart
                   $('#graph').highcharts({
                       chart: {
@@ -44,6 +48,7 @@ $(function () {
                           ]
                       }]
                   });
+                });
               })
               
           });

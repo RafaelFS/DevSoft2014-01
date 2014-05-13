@@ -87,6 +87,7 @@ save_html('after_login', mechanize.page.body)
 ##         TODO: CONTINUE FROM HERE!          ##
 ################################################
 f = File.new("estagios",  "w+")
+f.print "{\"estagios\":["
 vagas = []
 10.times do |i|
   currentid = 50 + i
@@ -106,6 +107,8 @@ vagas = []
   validade =  doc.css('#ContentPlaceHolder1_lblDataValidade').text
   nvagas =  doc.css('#ContentPlaceHolder1_lblNumeroVagas').text
   vagas[i] = Vaga.new(currentid, habilitacao, titulo, empresa, atuacao, descricao, requisitos, beneficios, contatos, data, validade, nvagas)
-  f.puts vagas[i].to_json
+  f.print vagas[i].to_json
+  f.print ","
 end
+f.print "]}"
 
