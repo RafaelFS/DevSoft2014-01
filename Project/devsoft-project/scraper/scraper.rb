@@ -145,6 +145,8 @@ vagas.each do |vaga|
   end
 end
 summary = File.new("../site/data/summary",  "w+")
+lastupdated = Time.new
+summary.puts "lastupdated=" + lastupdated.inspect
 summary.puts "totaldevagas=#{totaldevagas}" 
 summary.puts "vagasvalidas=#{vagasvalidas}"
 summary.puts "vagasembranco=#{vagasembranco}"
