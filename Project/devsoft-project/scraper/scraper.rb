@@ -83,13 +83,17 @@ mechanize.post("http://estagios.pcs.usp.br/semLogin/login.aspx", params, headers
 
 save_html('after_login', mechanize.page.body)
 
-################################################
-##         TODO: CONTINUE FROM HERE!          ##
-################################################
+#############################################################
+##         TODO: CONTINUE FROM HERE!               ##########
+## Create a JSON file containing the first n job postings ###
+## and save it to sites/data                              ###
+##                                                        ###
+#############################################################
 f = File.new("../site/data/estagios",  "w+")
 f.print "{\"estagios\":["
 vagas = []
-100.times do |i|
+n = 50
+n.times do |i|
   currentid = 0 + i
   puts currentid
   mechanize.get("http://estagios.pcs.usp.br/aluno/vagas/exibirVaga.aspx?id=#{currentid}")
@@ -110,5 +114,37 @@ vagas = []
   f.print vagas[i].to_json
   f.print ","
 end
+puts n
+mechanize.get("http://estagios.pcs.usp.br/aluno/vagas/exibirVaga.aspx?id=#{n}")
+#save_html("vagaid#{currentid}", mechanize.page.body)
+doc = mechanize.page.parser
+habilitacao =  doc.css('#ContentPlaceHolder1_lblHabilitacao').text
+titulo =  doc.css('#ContentPlaceHolder1_lblTitulo').text
+empresa =  doc.css('#ContentPlaceHolder1_lblEmpresa').text
+atuacao =  doc.css('#ContentPlaceHolder1_lblArea').text
+descricao =  doc.css('#ContentPlaceHolder1_lblDescricao').text
+requisitos =  doc.css('#ContentPlaceHolder1_lblRequisitos').text
+beneficios =  doc.css('#ContentPlaceHolder1_lblBeneficios').text
+contatos =  doc.css('#ContentPlaceHolder1_lblTContatos').text
+data =  doc.css('#ContentPlaceHolder1_lblDataAnuncio').text
+validade =  doc.css('#ContentPlaceHolder1_lblDataValidade').text
+nvagas =  doc.css('#ContentPlaceHolder1_lblNumeroVagas').text
+vagas[n] = Vaga.new(n, habilitacao, titulo, empresa, atuacao, descricao, requisitos, beneficios, contatos, data, validade, nvagas)
+f.print vagas[n].to_json
 f.print "]}"
 
+#Create a summary file containing the basic information needed by the site
+totaldevagas = vagas.length
+vagasembranco = 0
+vagasvalidas = 0
+vagas.each do |vaga|
+  if vaga.habilitacao == "" && vaga.titulo == "" && vaga.empresa == "" && vaga.atuacao == "" && vaga.descricao == "" && vaga.requisitos == "" && vaga.beneficios == "" && vaga.contatos == "" && vaga.data == "" && vaga.validade == "" && vaga.nvagas == ""
+    vagasembranco = vagasembranco + 1
+  else
+    vagasvalidas = vagasvalidas + 1
+  end
+end
+summary = File.new("../site/data/summary",  "w+")
+summary.puts "totaldevagas=#{totaldevagas}" 
+summary.puts "vagasvalidas=#{vagasvalidas}"
+summary.puts "vagasembranco=#{vagasembranco}"
